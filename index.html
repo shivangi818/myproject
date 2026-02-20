@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mood">Click to change mood</h1>
+        <button onclick="changeMood()">Change Mood</button>
+        <p id="counter">Mood changed 0 times 😎</p>
+        <div class="progress">
+            <div id="bar"></div>
+        </div>
+        <h3>📝 Mood History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Sound -->
+    <audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
